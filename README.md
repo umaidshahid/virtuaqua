@@ -35,7 +35,7 @@ This project was built to better understand the challenges of real-time water qu
 
 ---
 
-## 📦 Project Structure
+<!-- ## 📦 Project Structure
 
 virtuaqua/
 ├─ firmware/ # Simulated embedded firmware core
@@ -45,7 +45,7 @@ virtuaqua/
 ├─ dashboard/ # Simple host-side runner
 └─ Cargo.toml # Workspace configuration
 
----
+--- -->
 
 ## 🚀 Running the Simulation
 
