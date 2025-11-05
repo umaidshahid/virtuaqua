@@ -48,6 +48,7 @@ For example:
 ```rust
 // Example of simulated pH reading
 7.0 + rand::thread_rng().gen_range(-0.2..0.2)
+```
 This produces values that "wiggle" the same way real sensor signals do, which allows us to:
 
 Apply moving average filtering to smooth noisy readings
