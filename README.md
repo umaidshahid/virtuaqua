@@ -35,17 +35,28 @@ This project was built to better understand the challenges of real-time water qu
 
 ---
 
-<!-- ## 📦 Project Structure
+## 🎛️ Sensor Simulation Approach
 
-virtuaqua/
-├─ firmware/ # Simulated embedded firmware core
-│ ├─ sensors.rs # Virtual sensor drivers
-│ ├─ analytics.rs # Signal smoothing & anomaly detection
-│ └─ model.rs # Telemetry data structure
-├─ dashboard/ # Simple host-side runner
-└─ Cargo.toml # Workspace configuration
+Since this project runs without physical hardware, sensor readings are generated using controlled randomness. Each measurement starts from a realistic baseline value and adds small, natural variations to mimic:
 
---- -->
+- **Electronic noise** from ADC sampling
+- **Sensor drift** over time
+- **Environmental changes** (e.g., temperature effects)
+
+For example:
+
+```rust
+// Example of simulated pH reading
+7.0 + rand::thread_rng().gen_range(-0.2..0.2)
+This produces values that "wiggle" the same way real sensor signals do, which allows us to:
+
+Apply moving average filtering to smooth noisy readings
+
+Test contamination detection logic under realistic conditions
+
+Develop firmware structure before actual hardware is available
+
+---
 
 ## 🚀 Running the Simulation
 
