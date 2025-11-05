@@ -1,0 +1,1 @@
+/Users/neo/Documents/Projects/virtuaqua/target/debug/firmware: /Users/neo/Documents/Projects/virtuaqua/firmware/src/analytics.rs /Users/neo/Documents/Projects/virtuaqua/firmware/src/main.rs /Users/neo/Documents/Projects/virtuaqua/firmware/src/model.rs /Users/neo/Documents/Projects/virtuaqua/firmware/src/sensors.rs
